@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHome | Real Estate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+        .hero-carousel img {
+            height: 500px;
+            object-fit: cover;
+            filter: brightness(70%);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #212529;
+            color: white;
+            padding: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">DreamHome</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#listings">Listings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="btn btn-primary ms-lg-3" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner hero-carousel">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Luxury Villa">
+                <div class="carousel-caption">
+                    <h1 class="display-4 fw-bold">Find Your Dream Villa</h1>
+                    <p>Luxury homes in the heart of the city.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6199f7e009?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Modern House">
+                <div class="carousel-caption">
+                    <h1 class="display-4 fw-bold">Modern Living Spaces</h1>
+                    <p>Experience comfort and elegance.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container my-5" id="listings">
+        <h2 class="text-center mb-4">Featured Listings</h2>
+        <div class="row g-4">
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="House">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">$450,000</h5>
+                        <p class="card-text fw-bold">Sunset Apartment</p>
+                        <p class="text-muted">3 Bed | 2 Bath | 1,500 sqft</p>
+                        <a href="#" class="btn btn-outline-dark w-100">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="House">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">$890,000</h5>
+                        <p class="card-text fw-bold">Modern Family Home</p>
+                        <p class="text-muted">4 Bed | 3 Bath | 2,800 sqft</p>
+                        <a href="#" class="btn btn-outline-dark w-100">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm h-100">
+                    <img src="data:image/jpeg;base64,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" class="card-img-top" alt="House">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">$1,200,000</h5>
+                        <p class="card-text fw-bold">Luxury Penthouse</p>
+                        <p class="text-muted">5 Bed | 4 Bath | 4,000 sqft</p>
+                        <a href="#" class="btn btn-outline-dark w-100">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <h3>DreamHome Real Estate</h3>
+            <p>123 Property Lane, Real Estate City, RE 56789</p>
+            <div class="mb-3">
+                <a href="#" class="text-white me-3 text-decoration-none">Facebook</a>
+                <a href="#" class="text-white me-3 text-decoration-none">Instagram</a>
+                <a href="#" class="text-white text-decoration-none">Twitter</a>
+            </div>
+            <p class="small text-muted mb-0">&copy; 2026 DreamHome Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
